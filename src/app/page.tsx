@@ -4,10 +4,24 @@ import React from 'react'
 const Home = () => {
   return (
     <MainBox>
-      <div className='border-1 w-full overflow-none border-gray-600 px-3 py-7 flex flex-row items-center justify-between'>
+      <div className=' w-full overflow-none border-custom-border px-3 py-7 flex flex-row items-center border-b-2'>
+
+
+        {/* Profile owner */}
+        <div className='w-full flex items-center gap-2'>
+
+          <div className='w-10 h-10 bg-slate-500 rounded-full'>
+          </div>
+          <h2 className='text-gray-500 text-sm'>Whats new?</h2>
+        </div>
+        <button className='py-1 px-6 border-2 border-custom-border  rounded-3xl justify-end items-end' >
+          Post
+
+        </button>
+
 
       </div>
-    </MainBox>
+    </MainBox >
   )
 }
 

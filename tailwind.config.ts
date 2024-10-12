@@ -11,6 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
+        custom: {
+          border: "#181818",
+          light: '#080606',
+          DEFAULT: '#1fb6ff', // Default color (e.g., 'bg-customBlue')
+          dark: '#009eeb',
+        }
       },
     },
   },
