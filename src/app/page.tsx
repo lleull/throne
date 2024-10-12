@@ -4,12 +4,10 @@ import React from 'react'
 interface Hometype {
   CustomPost: any
 }
-const Home: React.FC<Hometype> = () => {
+const Home: React.FC<Hometype> = ({ children }: any) => {
   return (
     <MainBox>
       <div className=' w-full overflow-none border-custom-border px-3 py-7 flex flex-row items-center border-b-2'>
-
-
         {/* Profile owner */}
         <div className='w-full flex items-center gap-2'>
 
@@ -21,12 +19,13 @@ const Home: React.FC<Hometype> = () => {
           Post
 
         </button>
-
-
       </div>
+      {[1, 2, 3, 4, 5].map((items) => {
+        return (
+          <CustomPost />
 
-
-
+        )
+      })}
     </MainBox >
   )
 }
