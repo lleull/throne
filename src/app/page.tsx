@@ -1,7 +1,10 @@
+import CustomPost from '@/components/CustomPost'
 import MainBox from '@/components/MainBox'
 import React from 'react'
-
-const Home = () => {
+interface Hometype {
+  CustomPost: any
+}
+const Home: React.FC<Hometype> = () => {
   return (
     <MainBox>
       <div className=' w-full overflow-none border-custom-border px-3 py-7 flex flex-row items-center border-b-2'>
@@ -21,6 +24,9 @@ const Home = () => {
 
 
       </div>
+
+
+
     </MainBox >
   )
 }
