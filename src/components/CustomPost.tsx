@@ -6,7 +6,7 @@ import { VscComment } from "react-icons/vsc";
 import { BiRepost } from "react-icons/bi";
 import { PiTelegramLogo } from "react-icons/pi";
 
-const CustomPost = ({ children }: any) => {
+const CustomPost = ({ children, }: any) => {
     return (
 
         <div className=' w-full overflow-none border-custom-border px-3 py-7 flex flex-row items-start border-b-2 gap-3'>
