@@ -4,19 +4,18 @@ import MainBox from '@/components/MainBox'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import Avatar from "@/assets/p1.jpeg"
-import AddThrone from '@/components/AddThrone'
 import Sidebar from '@/components/Sidebar'
-
+import AddNewPost from '@/components/AddPost'
 interface Hometype {
   CustomPost: any
 }
 const Home: React.FC<Hometype> = ({ children }: any) => {
   const [isModalOpen, setModalOpen] = useState(false);
   return (
-    <div className="flex flex-row items-center">
+    <div className="flex flex-row items-center " >
 
       <Sidebar setModalOpen={setModalOpen} />
-      {/* <AddThrone isOpen={isModalOpen} onClose={() => setModalOpen(false)} /> */}
+      <AddNewPost isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
       <MainBox>
         <div className=' w-full overflow-none  border-custom-border px-3 py-7 flex flex-row items-center border-b-2'>
           {/* Profile owner */}
