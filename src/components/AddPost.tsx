@@ -11,8 +11,8 @@ const AddNewPost = ({ isOpen, onClose }: any) => {
         <Portal>
 
             <div className='w-full h-screen flex items-center justify-center bg-blur absolute top-0 z-10'>
-                <div className='w-[62vh] ml-5   border-custom-border bg-custom-light border-2 rounded-3xl  mt-5   items-center justify-center h-54 '>
-                    <div className='w-full px-5 py-2  flex flex-row border-b-2 border-custom-border mb-2'>
+                <div className='w-[62vh] ml-5 py-7   border-custom-border bg-custom-light border-2 rounded-3xl  mt-5   items-center justify-center h-54 '>
+                    <div className='w-full px-5 py-2 pb-4 flex flex-row border-b-2 border-custom-border mb-2'>
 
                         <button onClick={() => onClose(!isOpen)} className='py-1  px-4  text-pretty  rounded-3xl justify-end items-end' >
                             Close
@@ -53,7 +53,7 @@ const AddNewPost = ({ isOpen, onClose }: any) => {
                         <p className='text-[16px] text-gray-500'>Anyone can relpy and react?</p>
 
 
-                        <button onClick={() => onClose(!isOpen)} className='py-1 border-custom-border border-2  px-4  text-pretty  rounded-3xl justify-end items-end' >
+                        <button onClick={() => onClose(!isOpen)} className='py-1 border-custom-border border-2  px-4  text-pretty  rounded-3xl justify-end items-end hover:bg-slate-400' >
                             Post
 
                         </button>
