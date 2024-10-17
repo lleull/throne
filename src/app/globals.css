@@ -60,3 +60,28 @@ p {
   filter: brightness(1);
   transform: translateZ(200px);
 }
+
+.image:hover+* {
+  transform: translateZ(150px) rotateY(40deg);
+  filter: brightness(0.6);
+}
+
+.image:hover+*+* {
+  transform: translateZ(70px) rotateY(20deg);
+  filter: brightness(0.4);
+}
+
+.image:hover+*+*+* {
+  transform: translateZ(30px) rotateY(10deg);
+  filter: brightness(0.4);
+}
+
+.image:has(+*:hover) {
+  transform: translateZ(150px) rotateY(-40deg);
+  filter: brightness(0.2);
+}
+
+.image:has(+*+*:hover) {
+  transform: translateZ(50px) rotateY(-40deg);
+  filter: brightness(0.1);
+}
