@@ -35,7 +35,7 @@ p {
 }
 
 .list {
-  background: linear-gradient(130deg, rgb(0, 0, 0), rgb(255, 216, 216));
+  background: linear-gradient(130deg, rgba(3, 200, 255, 0.608), rgb(255, 216, 216));
   display: flex;
   width: 100%;
   height: 100vh;
@@ -50,9 +50,10 @@ p {
 .image {
   filter: brightness(0);
   width: 200px;
-  height: 250px;
+  height: 400px;
   margin-left: 3px;
-  transition: .5s;
+  transition: .2s;
+  border-radius: 120px;
 }
 
 .image:hover {
