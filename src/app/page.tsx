@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div className='flex flex-col items-center w-full'>
-      <h2 className='text-6xl font-serif '>WELCOME TO MY ALBUM</h2>
+      <h2 className='text-6xl font-serif '>WELCOME TO MY CAROUSEL</h2>
       <div className='list'>
         <Image src={img1} className='image' alt='hello' />
         <Image src={img2} className='image' alt='hello' />
@@ -21,7 +21,6 @@ const Home = () => {
         <Image src={img4} className='image' alt='hello' />
         <Image src={img5} className='image' alt='hello' />
         <Image src={img6} className='image' alt='hello' />
-        {/* <Image src={img1/} className='image' alt='hello' /> */}
 
       </div>
     </div>

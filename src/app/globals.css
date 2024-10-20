@@ -68,21 +68,21 @@ p {
 }
 
 .image:hover+*+* {
-  transform: translateZ(70px) rotateY(20deg);
+  transform: translateZ(70px) rotateY(30deg);
   filter: brightness(0.4);
 }
 
 .image:hover+*+*+* {
-  transform: translateZ(30px) rotateY(10deg);
+  transform: translateZ(30px) rotateY(5deg);
   filter: brightness(0.4);
 }
 
 .image:has(+*:hover) {
-  transform: translateZ(150px) rotateY(-40deg);
+  transform: translateZ(150px) rotateY(-30deg);
   filter: brightness(0.2);
 }
 
 .image:has(+*+*:hover) {
-  transform: translateZ(50px) rotateY(-40deg);
+  transform: translateZ(50px) rotateY(-30deg);
   filter: brightness(0.1);
 }
