@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ['YourFontName', 'sans-serif'], // Use a fallback font as well
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
