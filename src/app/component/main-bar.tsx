@@ -2,7 +2,7 @@ import React from 'react'
 
 const Main_bar = () => {
     return (
-        <div className='w-full flex items-start justify-center  h-screen'>
+        <div className='flex flex-col  items-center   h-screen'>
             <div className='w-full h-24 bg-red-200 flex items-center justify-between pl-20'>
                 <h1 className='text-3xl'>
 
@@ -28,6 +28,21 @@ const Main_bar = () => {
                     }
                 </div>
             </div>
+            <div>
+
+                <p className='w-1/2 text-2xl text-white text-left p-20 border-2 border-red-200'>
+                    <strong className='font-serif text-3xl'>
+                        At Markan Beauty School,
+                    </strong>  we believe that makeup is not just an art; it’s a powerful way to express creativity, boost confidence, and create beauty. Whether you're a beginner or a seasoned professional, our comprehensive makeup courses offer something for everyone. Our expert instructors provide hands-on training in everything from basic techniques to advanced makeup artistry, using the latest trends and tools in the industry.
+
+                    Join a community of like-minded artists and get the skills you need to excel in the beauty industry. From bridal makeup to special effects, our curriculum is designed to give you the versatility and knowledge to succeed. Unlock your full potential and start your career as a professional makeup artist today!
+                </p>
+
+            </div>
+            <button className='bg-slate-50 text-2xl pt-7 pb-7 pl-10 pr-10 rounded-3xl mt-24'>
+                Sign Up
+            </button>
+
         </div>
     )
 }
