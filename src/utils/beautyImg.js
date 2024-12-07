@@ -35,4 +35,8 @@ export const BeautyImages = [
         id: 8,
         image: pic8
     },
+    {
+        id: 9,
+        image: pic9
+    },
 ]

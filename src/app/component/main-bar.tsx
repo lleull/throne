@@ -1,6 +1,9 @@
 import React from 'react'
-
+import { BeautyImages } from "../../utils/beautyImg"
+import { useState } from 'react'
+import Image from 'next/image'
 const Main_bar = () => {
+    const [nextImage, setnextImage] = useState(1)
     return (
         <div className='flex flex-col  items-center   h-screen'>
             <div className='w-full h-24 bg-red-200 flex items-center justify-between pl-20'>
@@ -37,6 +40,8 @@ const Main_bar = () => {
 
                     Join a community of like-minded artists and get the skills you need to excel in the beauty industry. From bridal makeup to special effects, our curriculum is designed to give you the versatility and knowledge to succeed. Unlock your full potential and start your career as a professional makeup artist today!
                 </p>
+
+                <Image src={BeautyImages[nextImage].image} alt="s" />
 
             </div>
             <button className='bg-slate-50 text-2xl pt-7 pb-7 pl-10 pr-10 rounded-3xl mt-24'>
