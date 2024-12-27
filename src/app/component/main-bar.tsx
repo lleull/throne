@@ -2,9 +2,34 @@ import React, { useEffect } from 'react'
 import { BeautyImages } from "../../utils/beautyImg"
 import { useState } from 'react'
 import Image from 'next/image'
+import axios from 'axios'
 const Main_bar = () => {
     const [nextImage, setnextImage] = useState(1)
+    const [markertData, setMarketData] = useState()
+
+    const options = {
+        method: "GET",
+        mode: "nocors",
+        url: "https://coinranking1.p.rapidapi.com/coins",
+        params: {
+            referenceCurrencyUuid: "yhjMzLPhuIDl",
+            timePeriod: "24h",
+            "tiers[0]": "1",
+            orderBy: "marketCap",
+            orderDirection: "desc",
+            limit: "50",
+            offset: "0",
+        },
+        headers: {
+            "X-RapidAPI-Key": "36e79fec5bmsh0641910c952cbeep1afb1ejsn132bcc2ba3cc",
+            "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
+        },
+    };
+
     useEffect(() => {
+        axios.request(options).then((response) => {
+            console.log("response: " + response)
+        })
         setTimeout(() => {
             if (BeautyImages.length = nextImage) {
 
