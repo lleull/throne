@@ -5,8 +5,18 @@ import Image from 'next/image'
 import axios from 'axios'
 const Main_bar = () => {
     const [nextImage, setnextImage] = useState(1)
+    const [nameFound, setnameFound] = useState<string>()
+
     // const [n]
     const [Text, setText] = useState<string>()
+
+
+
+
+
+
+
+
 
     const array = [
         {
@@ -34,16 +44,17 @@ const Main_bar = () => {
                 if (finddname) {
                     searchTime++
                     resolve("Finded name:" + finddname.name)
+                    setnameFound("true")
                     console.log("Search time", + searchTime)
                 } else {
                     resolve("No names founds")
+                    setnameFound("false")
+
 
                 }
             } catch (error) {
                 reject("No names founds")
             }
-
-
         })
     }
     const handleSearch = () => {
@@ -93,10 +104,12 @@ const Main_bar = () => {
 
                             Explore more
                         </button>
+                        {nameFound && <p>Name has successfully search and found its {nameFound}</p>}
                     </div>
                 </p>
 
                 <Image className='w-1/2 rounded-l-full' src={BeautyImages[nextImage].image} alt="s" />
+
 
             </div>
 
