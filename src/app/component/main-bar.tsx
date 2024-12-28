@@ -27,11 +27,14 @@ const Main_bar = () => {
 
 
         return new Promise((resolve, reject) => {
+            let searchTime = 0
             try {
 
                 const finddname = array.find((data) => data.name === Text)
                 if (finddname) {
+                    searchTime++
                     resolve("Finded name:" + finddname.name)
+                    console.log("Search time", + searchTime)
                 } else {
                     resolve("No names founds")
 
@@ -51,6 +54,7 @@ const Main_bar = () => {
 
     return (
         <div className='flex flex-col  items-center   h-screen'>
+
             <div className='w-full h-24 bg-gray-800 flex items-center justify-between pl-20'>
                 <h1 className='text-3xl text-rose-50'>
 
